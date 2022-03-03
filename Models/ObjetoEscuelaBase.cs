@@ -1,8 +1,6 @@
 using System;
-using System.Collections.Generic;
 
-
-namespace Curso_ASP.NET_Core.Controllers
+namespace platzi_asp_net_core.Models
 {
     public abstract class ObjetoEscuelaBase
     {

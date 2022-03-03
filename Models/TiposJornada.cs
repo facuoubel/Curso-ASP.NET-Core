@@ -1,4 +1,4 @@
-namespace Curso_ASP.NET_Core.Controllers
+namespace platzi_asp_net_core.Models
 {
     public enum TiposJornada
     {

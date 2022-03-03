@@ -1,6 +1,6 @@
-using System.Diagnostics;
+using System;
 using Microsoft.AspNetCore.Mvc;
-using Curso_ASP.NET_Core.Models;
+using platzi_asp_net_core.Models;
 
 namespace Curso_ASP.NET_Core.Controllers
 {
@@ -10,13 +10,13 @@ namespace Curso_ASP.NET_Core.Controllers
         {
             var asignatura = new Asignatura{
                 UniqueId = Guid.NewGuid().ToString(),
-                Nombre = "Programación",
+                Nombre="Programación"
             };
 
             ViewBag.CosaDinamica = "La Monja";
-            
-            return View(asignatura);
+            ViewBag.Fecha = DateTime.Now;
 
+            return View(asignatura);
         }
     }
 }

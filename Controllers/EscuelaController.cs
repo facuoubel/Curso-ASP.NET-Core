@@ -1,6 +1,6 @@
-using System.Diagnostics;
+using System;
 using Microsoft.AspNetCore.Mvc;
-using Curso_ASP.NET_Core.Models;
+using platzi_asp_net_core.Models;
 
 namespace Curso_ASP.NET_Core.Controllers
 {
@@ -9,19 +9,17 @@ namespace Curso_ASP.NET_Core.Controllers
         public IActionResult Index()
         {
             var escuela = new Escuela();
+            escuela.AñoDeCreación = ---;
             escuela.UniqueId = Guid.NewGuid().ToString();
             escuela.Nombre = "Cens 65";
-            escuela.AñoDeCreación = 2022;
-            escuela.Ciudad = "Buenos Aires";
+            escuela.Ciudad = "Villa Devoto - Ciudad de Buenos Aires";
             escuela.Pais = "Argentina";
-            escuela.Dirección = "Salvador María del Carril 4172";
+            escuela.Dirección = "Mercedes 4002";
             escuela.TipoEscuela = TiposEscuela.Secundaria;
 
+            ViewBag.CosaDinamica = "Villa Devoto";
 
-            ViewBag.CosaDinamica = "La Monja";
-            
             return View(escuela);
-
         }
     }
 }

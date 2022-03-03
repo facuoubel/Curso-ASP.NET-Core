@@ -1,1 +1,1 @@
-# Curso-ASP.NET-Core
+# platzi-asp-net-core
