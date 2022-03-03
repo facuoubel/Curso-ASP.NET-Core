@@ -10,8 +10,13 @@ namespace Curso_ASP.NET_Core.Controllers
         {
             var escuela = new Escuela();
             escuela.UniqueId = Guid.NewGuid().ToString();
-            escuela.Nombre = "Facu Academy";
+            escuela.Nombre = "Cens 65";
             escuela.AñoDeCreación = 2022;
+            escuela.Ciudad = "Buenos Aires";
+            escuela.Pais = "Argentina";
+            escuela.Dirección = "Salvador María del Carril 4172";
+            escuela.TipoEscuela = TiposEscuela.Secundaria;
+
 
             ViewBag.CosaDinamica = "La Monja";
             

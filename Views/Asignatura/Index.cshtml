@@ -1,0 +1,13 @@
+﻿@model Asignatura
+
+@{
+    ViewData["Title"] = "Información Asignatura";
+    Layout = "Simple";
+}
+
+<div class="text-center">
+    <h1>Asignatura @ViewData["Title"]</h1>
+    <h2>Nombre: @Model.Nombre </h2>
+
+    <p><i>@ViewBag.CosaDinamica</i></p>
+</div>
